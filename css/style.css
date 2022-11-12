@@ -1,0 +1,106 @@
+* {
+  text-decoration: none !important;
+  list-style: none;
+}
+a {
+  cursor: pointer;
+}
+#recipes,
+#search,
+#categories,
+#area,
+#ingredients,
+#form {
+  display: none;
+}
+#Home {
+  display: block;
+}
+nav a {
+  color: white;
+}
+nav a:hover {
+  color: red;
+}
+.logonav {
+  width: 40px;
+}
+.iconNav {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+}
+.naviconn {
+  cursor: pointer;
+}
+.linksNav {
+  position: fixed;
+  display: flex;
+  z-index: 999;
+}
+.layer {
+  transform: translateY(105%);
+  transition: 0.5s all;
+}
+
+.item:hover .layer,
+.itemC:hover .layer,
+.itemArea:hover .layer,
+.itemR:hover .layer {
+  transform: translateY(0);
+}
+.contantInput {
+  box-shadow: 1px 1px 3px white;
+}
+.validIcon {
+  position: absolute;
+  right: 5%;
+  top: 46%;
+}
+.is-valid {
+  border-bottom: green 2px solid !important;
+}
+.form p,
+.form i {
+  display: none;
+}
+p.is-valid,
+i.is-valid {
+  display: none;
+}
+.item,
+.itemingr,
+.itemArea,
+.itemC,
+.itemR {
+  cursor: pointer;
+}
+
+.animelink {
+  height: 85%;
+  justify-content: space-between;
+}
+.animeicon {
+  height: 15%;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  background-color: rgb(158, 190, 193);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  overflow: visible;
+}
+@media screen and ( max-width : 800px )  {
+  body{
+      padding: 0 !important;
+  }
+}
+
