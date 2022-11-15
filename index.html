@@ -1,195 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Assigment Route" />
-    <meta name="keywords" content="Assigment " />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="Img/logo.png" />
-    <title>Yummy Exam</title>
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="bg-black">
-    <div class="loading">
-      <i class="fa-solid fa-5x fa-spin fa-spinner"></i>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
     </div>
-    <nav>
-      <div
-        class="linksNav bg-black flex-column justify-content-between h-100 pt-4"
-      >
-        <ul class="animelink d-flex flex-column">
-          <li><a class="fs-6 searchli">Search</a></li>
-          <li><a class="fs-6 categoriesli">Categories</a></li>
-          <li><a class="fs-6 areali">Area</a></li>
-          <li><a class="fs-6 ingredientsli">Ingredients</a></li>
-          <li><a class="fs-6 contactUsli">Contact Us</a></li>
-        </ul>
-        <div class="animeicon d-flex flex-column justify-content-around">
-          <div class="text-center">
-            <a href="#">
-              <i class="fa-brands px-2 fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands px-2 fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands px-2 fa-github"></i>
-            </a>
-          </div>
-          <div>
-            <p class="text-white mx-auto w-75">
-              Copyright Â© 2019 All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="iconNav bg-white flex-column justify-content-between h-100 p-3 text-center"
-      >
-        <div>
-          <img class="logonav" src="Img/logo.png" alt="Logo Nav" />
-        </div>
-        <div>
-          <i class="naviconn fa-solid fa-xl fa-bars"></i>
-        </div>
-        <div>
-          <a class="text-black" href="#">
-            <i class="d-block fa-solid fa-globe"></i>
-          </a>
-          <a class="text-black" href="#">
-            <i class="pt-3 fa-solid fa-share-nodes"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-    <section id="search" class="p-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <input
-              class="form-control text-white byName text-center bg-black rounded-0 border-0 border-bottom"
-              type="text"
-              placeholder="Search By Name"
-            />
-          </div>
-          <div class="col-md-6">
-            <input
-              maxlength="1"
-              class="form-control text-white byfrstlter text-center bg-black rounded-0 border-0 border-bottom"
-              type="text"
-              placeholder="Search By First Letter..."
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="Home" class="p-5">
-      <div class="container py-5">
-        <div id="displayItem" class="row py-5"></div>
-      </div>
-    </section>
-    <section id="recipes" class="p-5 text-white">
-      <div class="container p-5">
-        <div class="Recipy row p-5"></div>
-      </div>
-    </section>
 
-    <section id="categories" class="p-5">
-      <div class="container py-5">
-        <div id="htmlcatg" class="row py-5"></div>
-      </div>
-    </section>
-    <section id="area" class="p-5 text-white text-center">
-      <div class="container p-5">
-        <div class="row gy-5 htmlarea p-5"></div>
-      </div>
-    </section>
-    <section id="ingredients" class="p-5 text-white text-center">
-      <div class="container p-5">
-        <div class="row gy-5 htmlingr"></div>
-      </div>
-    </section>
-    <section id="form" class="form p-5 text-white text-center">
-      <div class="container py-5">
-        <h4 class="display-5">Contac Us...</h4>
-        <div class="row gy-3 w-75 mx-auto">
-          <div class="col-md-6 position-relative">
-            <input
-              class="form-control inputName mb-2 contantInput text-white text-center bg-black rounded-0 border-0 border-bottom"
-              type="text"
-              placeholder="Enter Your Name"
-            />
-            <p class="bg-danger bg-opacity-25 px-5 py-3">
-              Special Characters and Numbers not allowed
-            </p>
-            <i class="fa-solid fa-xmark text-danger validIcon fa-lg"></i>
-          </div>
-          <div class="col-md-6 position-relative">
-            <input
-              class="form-control inputEmail contantInput text-white text-center bg-black rounded-0 border-0 border-bottom"
-              type="text"
-              placeholder="Enter E-mail"
-            />
-            <p class="bg-danger bg-opacity-25 px-5 py-3">
-              Enter valid email. *Ex: xxx@yyy.zzz
-            </p>
-            <i class="fa-solid fa-xmark text-danger validIcon fa-lg"></i>
-          </div>
-          <div class="col-md-6 position-relative">
-            <input
-              class="form-control inputPhone contantInput text-white text-center bg-black rounded-0 border-0 border-bottom"
-              type="text"
-              placeholder="Enter Your Phone"
-            />
-            <p class="bg-danger bg-opacity-25 px-5 py-3">
-              Enter valid Phone Number
-            </p>
-            <i class="fa-solid fa-xmark text-danger validIcon fa-lg"></i>
-          </div>
-          <div class="col-md-6 position-relative">
-            <input
-              class="form-control contantInput inputAge text-white text-center bg-black rounded-0 border-0 border-bottom"
-              type="text"
-              placeholder="Enter Your Age"
-            />
-            <p class="bg-danger bg-opacity-25 px-5 py-3">Enter valid Age</p>
-            <i class="fa-solid fa-xmark text-danger validIcon fa-lg"></i>
-          </div>
-          <div class="col-md-6 position-relative">
-            <input
-              class="form-control contantInput inputPassword text-white text-center bg-black rounded-0 border-0 border-bottom"
-              type="password"
-              placeholder="Enter Your Password"
-            />
-            <p class="bg-danger bg-opacity-25 px-5 py-3">
-              Enter valid password *Minimum eight characters, at least one
-              letter and one number:*
-            </p>
-            <i class="fa-solid fa-xmark text-danger validIcon fa-lg"></i>
-          </div>
-          <div class="col-md-6 position-relative">
-            <input
-              class="form-control contantInput inputRePassword text-white text-center bg-black rounded-0 border-0 border-bottom"
-              type="password"
-              placeholder="Enter RePassword"
-            />
-            <p class="bg-danger bg-opacity-25 px-5 py-3">
-              Enter valid Repassword
-            </p>
-            <i class="fa-solid fa-xmark text-danger validIcon fa-lg"></i>
-          </div>
-        </div>
-        <button disabled class="subBtnn btn my-5 btn-outline-danger">
-          Submit
-        </button>
-      </div>
-    </section>
 
-    <script src="js/jquery-3.6.1.min.js"></script>
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li  onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer">Search</li>
+                    <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer">Categories</li>
+                    <li onclick="getArea(); closeSideNav()" class="py-2 position-relative cursor-pointer">Area</li>
+                    <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+                    <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons text-white-50 opacity-75 py-4">
+                    <i class="fa-brands  fa-facebook "></i>
+                    <i class="fa-brands  fa-twitter px-3"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="imgs/logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-xl"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+ 
+    
+    <div class="container w-75" id="searchContainer">
+       
+    </div>
+
+    <div class="min-vh-100 position-relative">
+        <div class="inner-loading-screen top-0  start-0 end-0 bottom-0 justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        
+    
+        <div class="container">
+            <div class="row justify-content-around py-5 m-5 gy-4 " id="rowData">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>
